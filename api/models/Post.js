@@ -8,6 +8,7 @@
 module.exports = {
 
   attributes: {
+  	cover: "string",
   	title: "string",
   	content: "text",
   	auth: "string"
