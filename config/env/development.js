@@ -17,8 +17,16 @@ module.exports = {
    * environment (see config/connections.js and config/models.js )           *
    ***************************************************************************/
 
+  models: {
+    connection: 'myqlServer'
+  },
+  port: process.env.PORT || 1337,
+  // log: {
+  //   level: 'verbose'
+  // },
   // models: {
-  //   connection: 'someMongodbServer'
+  //   connection: 'mysql',
+  //   migrate: 'safe'
   // }
 
 };

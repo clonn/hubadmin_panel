@@ -9,7 +9,8 @@ module.exports = {
 
   attributes: {
   	title: "string",
-  	content: "string"
+  	content: "text",
+  	auth: "string"
   }
 };
 

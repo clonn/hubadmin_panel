@@ -40,24 +40,37 @@ module.exports.adminpanel = {
             list: {
                 fields: {
                     id: 'ID',
-                    title: 'Email',
-                    Content: 'Active',
-                    admin: 'Admin',
+                    title: 'Post Title',
+                    content: 'Post Content',
+                    auth: 'Post Author',
                     createdAt: 'Created'
                 }
+            },
+            add: {
+                fields: {
+                    id: 'ID',
+                    title: 'Post Title',
+                    content: 'Post Content',
+                    auth: 'Post Author',
+                    // createdAt: 'Created'
+                }  
             },
 
             edit: {
                 fields: {
-                    email: 'Email',
-
-                    active: {
-                        title: 'Active'
-                    },
-                    admin: {
-                        title: 'Admin',
-                        disabled: true
-                    }
+                    title: 'Post Title',
+                    content: 'Post Content',
+                    auth: 'Post Author',
+                    // createdAt: {
+                    //     disabled: true
+                    // }
+                    // active: {
+                    //     title: 'Active'
+                    // },
+                    // admin: {
+                    //     title: 'Admin',
+                    //     disabled: true
+                    // }
                 }
             }
         }
