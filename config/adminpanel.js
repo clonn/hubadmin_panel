@@ -102,6 +102,38 @@ module.exports.adminpanel = {
         }
       }
     },
+    Preregistration: {
+      title: 'Preregistrations',
+      model: 'Preregistration',
+      list: {
+        fields: {
+          id: 'ID',
+          title: 'Preregistration title',
+          description: 'description',
+          cover: 'cover',
+          registrated: 'registrated',
+          quota: 'quota',
+        }
+      },
+      add: {
+        fields: {
+          title: 'Preregistration title',
+          description: 'description',
+          cover: 'cover',
+          registrated: 'registrated',
+          quota: 'quota',
+        }
+      },
+      edit: {
+        fields: {
+          title: 'Preregistration title',
+          description: 'description',
+          cover: 'cover',
+          registrated: 'registrated',
+          quota: 'quota',
+        }
+      },
+    },
   },
 
 
