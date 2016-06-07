@@ -28,6 +28,11 @@ module.exports = function(grunt) {
         cwd: './assets',
         src: ['**/*.!(coffee|less)'],
         dest: '.tmp/public'
+      }, {
+        expand: true,
+        cwd: './node_modules/sails-hook-adminpanel/assets/bower_components',
+        src: ['**/*.!(coffee|less)'],
+        dest: '.tmp/public/admin/bower_components'
       }]
     },
     build: {
