@@ -6,10 +6,12 @@
  */
 
 module.exports = {
-
   attributes: {
-  	username: 'string',
-  	email: 'string'
+    username: 'string',
+    email: 'string',
+    preregistrations: {
+      collection: 'preregistration',
+      via: 'users',
+    }
   }
 };
-

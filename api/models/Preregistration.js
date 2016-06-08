@@ -8,5 +8,10 @@ module.exports = {
     quota: "integer",
     // startDate: "date",
     // endDate: "date"
+    users: {
+      collection: 'user',
+      via: 'preregistrations',
+      dominant: true
+    }
   }
 };
