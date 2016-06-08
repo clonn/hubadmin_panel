@@ -12,6 +12,7 @@ module.exports = {
     preregistrations: {
       collection: 'preregistration',
       via: 'users',
+      through: 'preregistrationuser'
     }
   }
 };

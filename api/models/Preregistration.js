@@ -11,7 +11,7 @@ module.exports = {
     users: {
       collection: 'user',
       via: 'preregistrations',
-      dominant: true
+      through: 'preregistrationuser'
     }
   }
 };
