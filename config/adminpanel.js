@@ -1,8 +1,8 @@
 'use strict';
 
 module.exports.adminpanel = {
+  assets: 'copy',
   instances: {
-
     users: {
 
       title: 'Users',
@@ -113,6 +113,22 @@ module.exports.adminpanel = {
           cover: 'cover',
           registrated: 'registrated',
           quota: 'quota',
+          users: {
+            displayField: 'email'
+          }
+        }
+      },
+      view: {
+        fields: {
+          id: 'ID',
+          title: 'Preregistration title',
+          description: 'description',
+          cover: 'cover',
+          registrated: 'registrated',
+          quota: 'quota',
+          users: {
+            displayField: 'email'
+          }
         }
       },
       add: {
