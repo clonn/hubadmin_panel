@@ -4,23 +4,19 @@ module.exports.adminpanel = {
   assets: 'copy',
   instances: {
     users: {
-
       title: 'Users',
       model: 'User',
 
       list: {
         fields: {
-          id: 'ID',
-          email: 'Email',
-          active: 'Active',
-          admin: 'Admin',
-          createdAt: 'Created'
+          preregistrations: false,
+          createdAt: false,
+          updatedAt: false,
         }
       },
       edit: {
         fields: {
-          email: 'Email',
-
+          preregistrations: false,
           active: {
             title: 'Active'
           },
@@ -33,44 +29,31 @@ module.exports.adminpanel = {
     },
 
     Post: {
-
       title: 'Posts',
       model: 'Post',
 
       list: {
         fields: {
-          id: 'ID',
           title: 'Post Title',
-          content: 'Post Content',
-          auth: 'Post Author',
-          createdAt: 'Created'
+          cover: false,
+          createdAt: false,
+          updatedAt: false,
         }
       },
       add: {
         fields: {
           id: 'ID',
           title: 'Post Title',
-          content: 'Post Content',
-          auth: 'Post Author',
-          // createdAt: 'Created'
+          createdAt: false,
+          updatedAt: false,
         }
       },
 
       edit: {
         fields: {
           title: 'Post Title',
-          content: 'Post Content',
-          auth: 'Post Author',
-          // createdAt: {
-          //     disabled: true
-          // }
-          // active: {
-          //     title: 'Active'
-          // },
-          // admin: {
-          //     title: 'Admin',
-          //     disabled: true
-          // }
+          createdAt: false,
+          updatedAt: false,
         }
       }
     },
@@ -80,25 +63,23 @@ module.exports.adminpanel = {
       model: 'GameList',
       list: {
         fields: {
-          id: 'ID',
           title: 'GameList Title',
-          like: 'Like',
-          count: 'Count',
-          createdAt: 'Created'
+          createdAt: false,
+          updatedAt: false,
         }
       },
       add: {
         fields: {
           title: 'GameList Title',
-          like: 'Like',
-          count: 'Count',
+          createdAt: false,
+          updatedAt: false,
         }
       },
       edit: {
         fields: {
           title: 'GameList Title',
-          like: 'Like',
-          count: 'Count',
+          createdAt: false,
+          updatedAt: false,
         }
       }
     },
@@ -107,46 +88,43 @@ module.exports.adminpanel = {
       model: 'Preregistration',
       list: {
         fields: {
-          id: 'ID',
           title: 'Preregistration title',
-          description: 'description',
-          cover: 'cover',
-          registrated: 'registrated',
-          quota: 'quota',
           users: {
             displayField: 'email'
-          }
+          },
+          cover: false,
+          createdAt: false,
+          updatedAt: false,
         }
       },
       view: {
         fields: {
-          id: 'ID',
           title: 'Preregistration title',
-          description: 'description',
-          cover: 'cover',
-          registrated: 'registrated',
-          quota: 'quota',
           users: {
             displayField: 'email'
-          }
+          },
+          createdAt: false,
+          updatedAt: false,
         }
       },
       add: {
         fields: {
           title: 'Preregistration title',
-          description: 'description',
-          cover: 'cover',
-          registrated: 'registrated',
-          quota: 'quota',
+          users: {
+            displayField: 'email'
+          },
+          createdAt: false,
+          updatedAt: false,
         }
       },
       edit: {
         fields: {
           title: 'Preregistration title',
-          description: 'description',
-          cover: 'cover',
-          registrated: 'registrated',
-          quota: 'quota',
+          users: {
+            displayField: 'email'
+          },
+          createdAt: false,
+          updatedAt: false,
         }
       },
     },
